@@ -1,0 +1,144 @@
+{
+  "project_info": {
+    "project_number": "959658688632",
+    "firebase_url": "https://naeilallimproject.firebaseio.com",
+    "project_id": "naeilallimproject",
+    "storage_bucket": "naeilallimproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:959658688632:android:3cfdfbd44befa128",
+        "android_client_info": {
+          "package_name": "com.hbs.newfaceproject02"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "959658688632-h4ubqeuadd6btj8atoruisqtvldo85h0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hbs.newfaceproject02",
+            "certificate_hash": "020f22ac06127bbc1ee04f2995fe8701c62b4a4b"
+          }
+        },
+        {
+          "client_id": "959658688632-f1oms88i7j64cqrucp0o9u24418tt5vq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAd-CwHefoH0JHbiiR9hmaeFydeJm1sNsk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "959658688632-f1oms88i7j64cqrucp0o9u24418tt5vq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:959658688632:android:602cfdb4007e4207",
+        "android_client_info": {
+          "package_name": "com.honbly.newfaceproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "959658688632-iu2q4ub20d6lppfr7ttrl7bvdrhvek0f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.honbly.newfaceproject",
+            "certificate_hash": "020f22ac06127bbc1ee04f2995fe8701c62b4a4b"
+          }
+        },
+        {
+          "client_id": "959658688632-f1oms88i7j64cqrucp0o9u24418tt5vq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAd-CwHefoH0JHbiiR9hmaeFydeJm1sNsk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "959658688632-f1oms88i7j64cqrucp0o9u24418tt5vq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:959658688632:android:e89daac7271ce4b3",
+        "android_client_info": {
+          "package_name": "hongbly.naeilallimproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "959658688632-0490mb5io8rgbcnjh3c0a2hgcgmtj7s1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "hongbly.naeilallimproject",
+            "certificate_hash": "020f22ac06127bbc1ee04f2995fe8701c62b4a4b"
+          }
+        },
+        {
+          "client_id": "959658688632-f1oms88i7j64cqrucp0o9u24418tt5vq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAd-CwHefoH0JHbiiR9hmaeFydeJm1sNsk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "959658688632-f1oms88i7j64cqrucp0o9u24418tt5vq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-2733534737796224~2914087890"
+    }
+  ],
+  "configuration_version": "1"
+}

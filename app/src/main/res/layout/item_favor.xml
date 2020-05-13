@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/timeline_item"
+    android:layout_marginBottom="@dimen/dimen_8dp"
+    android:gravity="center_vertical"
+    android:padding="@dimen/dimen_8dp">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/favorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="가락시장역 3번 출구"
+            android:textSize="14dp"
+            android:layout_marginBottom="@dimen/dimen_8dp"
+            android:textStyle="bold"
+            android:textColor="@color/realBlack"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="남아있는 자전거 수 : "
+                android:textSize="12dp"
+                android:textColor="@android:color/holo_red_light"/>
+            <TextView
+                android:id="@+id/remainCycle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/realBlack"
+                android:textSize="12dp"
+                android:text="12"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="총 자전거 수 : "
+                android:textSize="12dp"
+                android:textColor="@android:color/holo_blue_light"/>
+            <TextView
+                android:id="@+id/totalCycle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/realBlack"
+                android:textSize="12dp"
+                android:text="12"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:background="@color/grayBack"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:layout_marginRight="@dimen/dimen_8dp"
+        android:layout_marginBottom="@dimen/dimen_8dp"/>
+    <ImageView
+        android:id="@+id/cancelFavor"
+        android:layout_width="@dimen/dimen_16dp"
+        android:layout_height="@dimen/dimen_16dp"
+        android:src="@drawable/favor_star_y"/>
+</LinearLayout>

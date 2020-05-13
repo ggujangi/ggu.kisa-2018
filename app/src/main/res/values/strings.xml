@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">빠릉이</string>
+
+    <string name="loginText">sign in</string>
+    <string name="signupText">sign up</string>
+
+    <string name="tmap_key">849ae94d-518c-4c8f-bbac-6ff8c99f98e4</string>
+    <string name="bank_key">l7xx8249e900e6514b56aabf984ce3aca9b1</string>
+    <string name="bank_secret">f202c455791544b9899b11d0550df297</string>
+
+
+    <string name="nav_buy">정기권 구매</string>
+    <string name="nav_favor">즐겨찾기</string>
+    <string name="nav_community">커뮤니티</string>
+    <string name="nav_mypage">마이페이지</string>
+    <string name="nav_question">도움말</string>
+    <string name="rental_text">대여</string>
+
+</resources>

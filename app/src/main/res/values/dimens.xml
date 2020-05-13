@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+
+    <dimen name="dimen_1dp">1dp</dimen>
+    <dimen name="dimen_4dp">4dp</dimen>
+    <dimen name="dimen_8dp">8dp</dimen>
+    <dimen name="dimen_10dp">10dp</dimen>
+    <dimen name="dimen_16dp">16dp</dimen>
+    <dimen name="dimen_24dp">24dp</dimen>
+    <dimen name="dimen_36dp">36dp</dimen>
+    <dimen name="dimen_48dp">48dp</dimen>
+    <dimen name="dimen_64dp">64dp</dimen>
+
+    <dimen name="toolbarHeight">40dp</dimen>
+
+    <dimen name="loginIcon">50dp</dimen>
+
+    <dimen name="appBarHeight">230dp</dimen>
+    <dimen name="appTitleSize">36dp</dimen>
+    <dimen name="closeBtnSize">24dp</dimen>
+
+    <dimen name="menuIconSize">40dp</dimen>
+    <dimen name="mainTitleSize">24dp</dimen>
+
+    <dimen name="searchPadding">10dp</dimen>
+
+    <dimen name="dialog_width">180dp</dimen>
+    <dimen name="iconSize">24dp</dimen>
+
+</resources>

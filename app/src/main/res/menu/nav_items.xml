@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/navMypage"
+        android:icon="@drawable/nav_mypage"
+        android:title="@string/nav_mypage" />
+
+    <item
+        android:id="@+id/navBuy"
+        android:icon="@drawable/baseline_credit_card_black_24dp"
+        android:title="@string/nav_buy" />
+
+
+    <item
+        android:id="@+id/navCommunity"
+        android:icon="@drawable/baseline_chat_black_24dp"
+        android:title="@string/nav_community" />
+
+    <!--
+    <item
+        android:id="@+id/navQuestion"
+        android:icon="@drawable/baseline_help_outline_black_24dp"
+        android:title="@string/nav_question" />-->
+</menu>

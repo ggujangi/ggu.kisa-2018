@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/realWhite">
+
+
+    <ImageView
+        android:id="@+id/titleLinear"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appBarHeight"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_16dp"
+        android:src="@drawable/login_background"/>
+
+    <include
+        android:id="@+id/content_login"
+        layout="@layout/content_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_24dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleLinear" />
+
+    <LinearLayout
+        android:id="@+id/loginBtnLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        app:layout_constraintEnd_toEndOf="@layout/content_login"
+        app:layout_constraintStart_toStartOf="@layout/content_login"
+        app:layout_constraintTop_toBottomOf="@id/loginBtns">
+
+        <ImageView
+            android:id="@+id/faceBookLogin"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/loginIcon"
+            android:layout_weight="1"
+            android:src="@drawable/facebook_login" />
+
+        <ImageView
+            android:id="@+id/googleLogin"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/loginIcon"
+            android:layout_weight="1"
+            android:src="@drawable/google_login" />
+
+        <ImageView
+            android:id="@+id/kakaoTalkLogin"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/loginIcon"
+            android:layout_weight="1"
+            android:src="@drawable/kakao_login" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/loginBtns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/content_login">
+
+        <TextView
+            android:id="@+id/emailLoginBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@color/realWhite"
+            android:text="@string/loginText"
+            android:textSize="@dimen/dimen_16dp"
+            android:textColor="@android:color/holo_blue_light"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <TextView
+            android:id="@+id/emailJoinBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/signupText"
+            android:background="@color/realWhite"
+            android:textSize="@dimen/dimen_16dp"
+            android:textColor="@android:color/holo_blue_light"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

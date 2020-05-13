@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/littleGray"
+    tools:context="com.hbs.newfaceproject02.Activity.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbarHeight"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/toolbarHeight"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/logo_ddareung"/>
+            <ImageView
+                android:id="@+id/questionBtn"
+                android:layout_width="@dimen/dimen_16dp"
+                android:layout_height="@dimen/dimen_16dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/question_btn"/>
+        </FrameLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal"
+        android:background="@color/realWhite"
+        android:layout_margin="@dimen/dimen_8dp">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/cycle_search"
+            android:padding="@dimen/searchPadding"
+            android:layout_weight="1"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="원하시는 지역을 검색해주세요"
+            android:textSize="12dp"
+            android:paddingLeft="@dimen/dimen_4dp"
+            android:layout_weight="8"/>
+    </LinearLayout>
+
+    <!--tmap 지도-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6">
+        <!--지도 Layout-->
+        <LinearLayout
+            android:id="@+id/tmapAPILinear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"/>
+        <LinearLayout
+            android:id="@+id/hideRouteLinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/realWhite"
+            android:layout_gravity="bottom"
+            android:visibility="gone"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dimen_16dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_8dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="출발지 : "
+                        android:textColor="@color/realBlack"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/startLocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_4dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="도착지 : "
+                        android:textColor="@color/realBlack"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/endLocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+            <Button
+                android:id="@+id/routeStartBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@color/yelloCard"
+                android:text="저장"/>
+        </LinearLayout>
+    </FrameLayout>
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        app:menu="@menu/nav_items"
+        app:elevation="8dp"
+        android:background="@color/realWhite"
+        app:itemBackground="@color/realWhite"
+        app:itemIconTint="@color/nav_item_colors"
+        app:itemTextColor="@color/nav_item_colors">
+
+    </android.support.design.widget.BottomNavigationView>
+</LinearLayout>
+

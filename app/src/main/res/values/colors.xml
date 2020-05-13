@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#499360</color>
+
+    <color name="mainColor">#499360</color>
+    <color name="littleGray">#eeeeee</color>
+
+    <color name="realBlack">#000000</color>
+    <color name="realWhite">#ffffff</color>
+    <color name="grayBack">#cecece</color>
+    <color name="iconGray">#737373</color>
+    <color name="halfTrans">#66000000</color>
+
+    <color name="yelloCard">#ffc952</color>
+
+    <color name="cardColor">#499360</color>
+</resources>

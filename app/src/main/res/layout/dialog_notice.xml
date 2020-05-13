@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="270dp"
+    android:layout_height="wrap_content"
+    android:background="@color/realWhite"
+    android:padding="@dimen/dimen_16dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginRight="@dimen/dimen_8dp"
+            android:src="@drawable/cycling"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/realBlack"
+            android:textSize="@dimen/dimen_16dp"
+            android:text="빠릉이"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_8dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:lineSpacingMultiplier="1.3"
+        android:textColor="@color/realBlack"
+        android:textSize="12dp"
+        android:text="등록하신 카드로 후불결제가 가능합니다. 카드를 자전거 단말기에 접촉해주세요." />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/noticeCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:text="다시 보지 않기"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/okText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:padding="8dp"
+        android:layout_marginRight="@dimen/dimen_16dp"
+        android:text="확인"/>
+</LinearLayout>

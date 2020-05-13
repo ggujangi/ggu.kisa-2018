@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/realWhite"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_24dp"
+            android:text="사용 카드 등록"/>
+        <ImageView
+            android:id="@+id/enrollClose"
+            android:layout_width="@dimen/dimen_16dp"
+            android:layout_height="@dimen/dimen_16dp"
+            android:layout_gravity="right"
+            android:layout_margin="@dimen/dimen_16dp"
+            android:src="@drawable/cancel"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <!--등록 가능 카드사-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="@color/littleGray"
+            android:layout_marginRight="@dimen/dimen_16dp"
+            android:layout_marginLeft="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:layout_marginBottom="@dimen/dimen_8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/dimen_4dp">
+            <ImageView
+                android:layout_width="@dimen/dimen_24dp"
+                android:layout_height="16dp"
+                android:layout_marginRight="@dimen/dimen_4dp"
+                android:src="@drawable/info"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="등록 가능 카드사"/>
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="12dp"
+                android:src ="@drawable/down_arrow"/>
+        </LinearLayout>
+
+
+        <!--카드 번호 등록-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dimen_16dp"
+            android:paddingRight="@dimen/dimen_16dp"
+            android:paddingBottom="@dimen/dimen_8dp">
+
+            <!--카드번호 EditText-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:text="카드번호"/>
+                <EditText
+                    android:id="@+id/cardNumEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="1234-5678-1234-5678"/>
+            </LinearLayout>
+
+            <!-- EditText-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <!--유효기간-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="10dp"
+                        android:text="유효기간"/>
+                    <EditText
+                        android:id="@+id/cardPeriodNumber"
+                        android:layout_width="100dp"
+                        android:maxLength="5"
+                        android:layout_height="wrap_content"
+                        android:hint="MM/yy"/>
+                </LinearLayout>
+                <!--CVC번호-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="10dp"
+                        android:text="CVC 번호"/>
+                    <EditText
+                        android:id="@+id/cardCvcNum"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:hint="***"
+                        android:maxLength="3"
+                        android:letterSpacing="0.3"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!--카드 등록 사용 안내-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:paddingTop="@dimen/dimen_8dp"
+            android:paddingLeft="@dimen/dimen_16dp"
+            android:paddingRight="@dimen/dimen_16dp"
+            android:paddingBottom="@dimen/dimen_8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="카드 등록 사용안내"
+                android:layout_marginBottom="@dimen/dimen_8dp"
+                android:textColor="@color/realBlack"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:text="안전한 카드 사용을 위해 반드시 본인 직접 등록 후 이용해주시기 바랍니다."/>
+
+            <!--개인정보 동의-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dimen_8dp"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:id="@+id/check1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="서비스 이용 및 개인정보처리 동의"
+                    android:gravity="center_vertical"
+                    android:textSize="12dp"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="보기"
+                    android:textSize="12dp"
+                    android:textColor="@android:color/holo_blue_light"
+                    android:gravity="center_vertical"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dimen_8dp"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:id="@+id/check2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="개인정보 제3자 제공 동의"
+                    android:gravity="center_vertical"
+                    android:textSize="12dp"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="보기"
+                    android:textSize="12dp"
+                    android:textColor="@android:color/holo_blue_light"
+                    android:gravity="center_vertical"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/iconGray"
+                android:layout_marginTop="@dimen/dimen_8dp" />
+
+            <!--모두 동의-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dimen_8dp"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:id="@+id/allCheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="모두 동의"
+                    android:gravity="center_vertical"
+                    android:textSize="12dp"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--카드 등록-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/enrollCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="카드 등록하기"
+                android:background="@color/realWhite"
+                android:textColor="@android:color/holo_red_dark"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

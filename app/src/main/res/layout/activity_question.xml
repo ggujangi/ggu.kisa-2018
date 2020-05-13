@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/realWhite"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/questToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/toolbarHeight"
+                android:background="@color/colorAccent"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+            <TextView
+                android:id="@+id/toolbarTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="도움말"
+                android:textColor="@color/realWhite"
+                android:textSize="13dp" />
+        </FrameLayout>
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="이용 수칙"
+            android:padding="@dimen/dimen_8dp"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:layout_marginBottom="@dimen/dimen_8dp"
+            android:textColor="#ffff0000" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="이용 문의 : 1599-0120"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="@dimen/dimen_8dp"
+            android:textColor="@color/realBlack"
+            android:lineSpacingExtra="0.3dp"
+            android:textSize="13dp"
+            android:gravity="center_vertical"
+            android:text="Step1 : Be sure to wear a helmet when you use it.\n\n
+Step2 : After drinking, you will be punished by the Road Traffic Act.\n\n
+Step3 : Brake, tire, chain, saddle tightening before use Please confirm.\n\n
+Step4 : Bicycle is also a car. You must keep the traffic regulations like cars.\n\n
+Step5 : It is not overspeed for pedestrian protection.\n\n
+Step6 : Where bicycle roads are not installed I pass on the right edge of the road.\n\n
+Step7 : Two or more cars do not drive along side by side.\n\n
+Step8 : On the crosswalk You must walk with your bike.\n\n
+Step9 : Put the handle on the road Earphones, cell phones are not used.\n\n"
+            />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/grayBack"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_48dp"
+            android:background="@color/realWhite"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/first"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/realWhite"
+                android:text="QnA" />
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/grayBack"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"/>
+
+            <Button
+                android:id="@+id/second"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/realWhite"
+                android:text="통화 연결" />
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/grayBack"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"/>
+
+            <Button
+                android:id="@+id/third"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@color/realWhite"
+                android:layout_weight="1"
+                android:text="상담 이력" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
